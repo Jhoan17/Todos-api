@@ -6,4 +6,3 @@ export const todoList = new TodoList();
 
 todoList.todos.forEach(crearTodoHTML);
 // todoList.todos.forEach((todo) => crearTodoHTML(todo));
-console.log(todoList.todos);

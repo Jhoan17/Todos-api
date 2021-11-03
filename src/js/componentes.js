@@ -31,7 +31,7 @@ txtInput.addEventListener('keyup', (event) => {
   if (event.keyCode === 13 && txtInput.value.length > 0) {
     const nuevoTodo = new Todo(txtInput.value);
     todoList.nuevoTodo(nuevoTodo);
-    // console.log(todoList);
+
     crearTodoHTML(nuevoTodo);
     txtInput.value = '';
   }
@@ -60,12 +60,11 @@ btnBorrar.addEventListener('click', () => {
       divTodoList.removeChild(elemento);
     }
   }
-  // console.log(todoList);
 });
 
 ulFiltros.addEventListener('click', (event) => {
   const filtro = event.target.text;
-  // console.log(filtro);
+
   if (!filtro) {
     return;
   }
